@@ -1,0 +1,36 @@
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 97.9%;
+  background: #111;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(255, 0, 90, 0.2);
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ff0077;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.nav-links li:hover {
+  color: #ff0077;
+  transform: translateY(-2px);
+}
