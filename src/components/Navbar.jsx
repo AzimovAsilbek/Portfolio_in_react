@@ -1,10 +1,10 @@
 import { Link } from "react-scroll";
-import "./Navbar.css";
+import "../components/Navbar.css";
 
 export default function Navbar() {
   return (
-    <nav className="navbar">
-      <div className="logo">MyPortfolio</div>
+    <nav className="header_nav">
+      <div className="logo"><Link to="hero" smooth duration={10000}>MyPortfolio</Link></div>
 
       <ul className="nav-links">
         <li><Link to="hero" smooth duration={500}>Home</Link></li>

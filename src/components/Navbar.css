@@ -1,8 +1,8 @@
-/* NAVBAR */
-.navbar {
+.header_nav {
   position: sticky;
   top: 0;
-  width: 97.9%;
+  width: 94.8vw;
+  max-width: 100%;
   background: #111;
   padding: 18px 40px;
   display: flex;
@@ -15,6 +15,14 @@
 .logo {
   font-size: 26px;
   font-weight: 700;
+  color: #e66da5;
+  cursor: pointer;
+  text-shadow: 1px 4px 5px rgb(107, 3, 3), 1px 2px 5px wheat;
+}
+
+.logo:hover {
+  transform: rotateZ(-5deg) scale(1.2);
+  text-shadow: 1px 2px 2px wheat ;
   color: #ff0077;
 }
 
