@@ -1,42 +1,62 @@
-/* HERO SECTION */
-.hero {
-  height: 90vh;
+/* Container */
+.hero-container {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f0f3d, #030314);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  padding: 0 20px;
   text-align: center;
 }
 
-.hero h1 {
-  font-size: 55px;
-  margin-bottom: 10px;
+/* Fade-in effect */
+.hero-content {
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
 }
 
-.hero h1 span {
+/* Title */
+.hero-title {
+  font-size: 3rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.highlight {
   color: #ff0077;
 }
 
-.hero p {
-  font-size: 22px;
-  opacity: 0.8;
+/* Subtitle */
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #d0d0d0;
+  margin-bottom: 30px;
+  min-height: 28px; /* typing effektda joy tebranmasligi uchun */
 }
 
-.btn {
-  margin-top: 20px;
-  padding: 12px 30px;
+/* Button */
+.hero-btn {
   background: #ff0077;
-  border: none;
-  border-radius: 10px;
-  font-size: 18px;
-  cursor: pointer;
   color: white;
-  transition: 0.3s;
+  padding: 12px 26px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 600;
 }
 
-.btn:hover {
-  transform: scale(1.05);
-  background: #ff3399;
+.hero-btn:hover {
+  background: #ff4fa2;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(255, 0, 119, 0.4);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }

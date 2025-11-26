@@ -1,43 +1,108 @@
 .contact {
   padding: 80px 20px;
+  background: #06070f;
   text-align: center;
 }
 
-.contact h2 {
-  font-size: 40px;
-  color: #ff0077;
-  margin-bottom: 30px;
+.contact-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: fadeDown 1.2s ease forwards;
 }
 
-form {
-  max-width: 500px;
-  margin: auto;
+/* Form container */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 18px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  backdrop-filter: blur(12px);
+  animation: fadeUp 1.3s ease forwards;
+  opacity: 0;
 }
 
-input,
-textarea {
-  background: #1b1b1b;
-  border: 1px solid #333;
+/* Inputs */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
   border-radius: 10px;
-  padding: 12px;
-  font-size: 17px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
   color: white;
-  transition: 0.3s;
-}
-
-input:focus,
-textarea:focus {
-  border-color: #ff0077;
+  font-size: 1rem;
+  transition: 0.3s ease;
   outline: none;
 }
 
-textarea {
-  height: 120px;
+/* Input focus glow */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff0077;
+  box-shadow: 0 0 8px rgba(255, 0, 119, 0.7);
 }
 
-form .btn {
-  width: 100%;
+/* Textarea height */
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Button */
+.contact-btn {
+  background: #ff0077;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 10px;
+}
+
+/* Button hover */
+.contact-btn:hover {
+  background: #ff4fa2;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 22px rgba(255, 0, 119, 0.45);
+}
+
+/* Animations */
+@keyframes fadeUp {
+  0% {
+    transform: translateY(35px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeDown {
+  0% {
+    transform: translateY(-35px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 2.1rem;
+  }
 }

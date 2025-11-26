@@ -1,13 +1,15 @@
+import "./Contact.css"
+
 export default function Contact() {
   return (
     <section id="contact" className="contact">
-      <h2>Contact Me</h2>
+      <h2 className="contact-title">Contact Me</h2>
 
-      <form>
+      <form className="contact-form">
         <input type="text" placeholder="Your Name" required />
         <input type="email" placeholder="Email Address" required />
         <textarea placeholder="Message" required></textarea>
-        <button className="btn">Send Message</button>
+        <button className="contact-btn">Send Message</button>
       </form>
     </section>
   );

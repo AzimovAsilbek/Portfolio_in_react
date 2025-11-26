@@ -1,37 +1,99 @@
 .projects {
-  padding: 80px 20px;
+  padding: 220px 20px 420px;
+  background: #0b0d17;
+  color: white;
   text-align: center;
 }
 
-.projects h2 {
-  font-size: 40px;
-  color: #ff0077;
+/* Project title */
+.project-title {
+  font-size: 2.6rem;
   margin-bottom: 40px;
+  font-weight: 700;
 }
 
+/* Hidden state (scroll-trigger uchun tayyor) */
+.hidden {
+  opacity: 0 !important;
+  transform: translateY(40px);
+}
+
+/* Show state — scroll tushganda ishlaydi */
+.show {
+  opacity: 1 !important;
+}
+
+/* Title animatsiyasi */
+.project-title.show {
+  animation: fadeDown 1s ease forwards;
+}
+
+/* Grid Layout */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  max-width: 1000px;
-  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
+/* Project Card */
 .project-card {
-  background: #1b1b1b;
+  background: rgba(255, 255, 255, 0.06);
   padding: 25px;
-  border-radius: 14px;
-  border: 1px solid #333;
-  transition: 0.3s;
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: all 0.35s ease;
+  transform: perspective(900px) rotateX(0deg) rotateY(0deg);
 }
 
+/* Card hover effects */
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: perspective(900px) rotateX(8deg) rotateY(8deg) scale(1.05);
+  box-shadow: 0 15px 35px rgba(255, 0, 119, 0.45);
   border-color: #ff0077;
-  box-shadow: 0 6px 14px rgba(255, 0, 119, 0.25);
 }
 
+/* Card text */
 .project-card h3 {
-  color: #ff0077;
   margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.project-card p {
+  color: #bbbbbb;
+}
+
+/* Fade animations */
+@keyframes fadeUp {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeDown {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .project-title {
+    font-size: 2rem;
+  }
 }
