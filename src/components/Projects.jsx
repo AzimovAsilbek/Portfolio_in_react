@@ -31,10 +31,21 @@ export default function Projects() {
       <h2 className="project-title hidden">My Projects</h2>
 
       <div className="project-grid">
-        <div className="project-card hidden">
-          <h3>Todo App</h3>
-          <p>React + Node.js</p>
-        </div>
+        <a style={{
+          color: "white",
+          textDecoration: "none",
+          borderRadius: "5px"
+        }} href="https://todo-app-eight-drab-50.vercel.app/">
+
+          <div className="project-card hidden">
+            <h3><a style={{
+              color: "white",
+              textDecoration: "none",
+              borderRadius: "5px"
+            }} href="https://todo-app-eight-drab-50.vercel.app/">Todo app</a></h3>
+            <p>React</p>
+          </div>
+        </a>
 
         <div className="project-card hidden">
           <h3>Portfolio Website</h3>
@@ -43,7 +54,7 @@ export default function Projects() {
 
         <div className="project-card hidden">
           <h3>E-Commerce Backend</h3>
-          <p>Python + PostgreSQLite</p>
+          <p>Python + SQLite</p>
         </div>
       </div>
     </section>
