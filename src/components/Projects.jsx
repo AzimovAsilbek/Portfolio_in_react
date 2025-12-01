@@ -59,7 +59,8 @@ export default function Projects() {
         </a>
 
         <div className="project-card hidden">
-          <h3>E-Commerce Backend</h3>
+          {/* <h3>E-Commerce Backend</h3> */}
+          <h3>Telegram Bot</h3>
           <p>Python + SQLite</p>
         </div>
       </div>
