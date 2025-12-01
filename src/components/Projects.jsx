@@ -46,11 +46,17 @@ export default function Projects() {
             <p>React</p>
           </div>
         </a>
-
+        
+         <a style={{
+          color: "white",
+          textDecoration: "none",
+          borderRadius: "5px"
+        }} href="https://website-in-javascirp.vercel.app/">
         <div className="project-card hidden">
-          <h3>Portfolio Website</h3>
-          <p>React</p>
+          <h3>Website</h3>
+          <p>Javascript</p>
         </div>
+        </a>
 
         <div className="project-card hidden">
           <h3>E-Commerce Backend</h3>
