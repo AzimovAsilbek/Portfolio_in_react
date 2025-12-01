@@ -35,14 +35,14 @@ export default function Projects() {
           color: "white",
           textDecoration: "none",
           borderRadius: "5px"
-        }} href="https://todo-app-eight-drab-50.vercel.app/">
+        }} href="https://todo-app-knew.vercel.app/">
 
           <div className="project-card hidden">
             <h3><a style={{
               color: "white",
               textDecoration: "none",
               borderRadius: "5px"
-            }} href="https://todo-app-eight-drab-50.vercel.app/">Todo app</a></h3>
+            }} href="https://todo-app-knew.vercel.app/">Todo app</a></h3>
             <p>React</p>
           </div>
         </a>
